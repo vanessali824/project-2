@@ -1,0 +1,9 @@
+.t-cursive{
+    font-family: 'Great Vibes', cursive;
+}
+
+.hero{
+    background-image: url(../img/boba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
