@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>boba T</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  >  
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-primary navbar-primary">
+        <div class="container-fluid">
+          <a href="Homepage.html"  class="navbar-brand animate__animated animate__tada text-secondary fs-1 ms-3">boba <span class="fw-bold text-warning t-cursive">T</span></a>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigationBar">
+              <ul class="navbar-nav">
+                <li class="nav-item"> 
+                    <a href="Homepage.html" class="nav-link">Home <i class="bi bi-house-door"></i></a>     
+                </li>
+                   <li class="nav-item"> 
+                      <a href="AboutUs.html" class="nav-link">About Us</a>     
+                  </li>
+                  <li class="nav-item">
+                      <a href="Products.html" class="nav-link">Products</a>     
+                  </li>
+                  <li class="nav-item">
+                    <a href="Cart.html" class="nav-link">Cart <i class="bi bi-cart4"></i> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Checkout.html" class="nav-link">Checkout</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      </nav>
+     
+      <div class="container mt-3">
+        <form method="get">
+        <div class="row">
+            
+            <div class="col-12 col-md-5">
+                    <legend class="fw-bold">Personal Information</legend> 
+                    <label for="FirstName" class="form-label">First Name:</label>
+                    <input type="text" id="FirstName" name="first-name" class="form-control mb-3" placeholder="Your first name" required>                
+               
+                    <label for="LastName" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control mb-3" id="LastName" name="last-name" placeholder="Your last name" required>
+                
+                    <label for="Email-address" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control mb-3" id="Email-address" name="email-address" placeholder="Your Email Address" required>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Newsletter" name="Newsletter" value="1">
+                        <label class="form-check-label text-decoration-underline" for="Newsletter">Sign up for our newsletter to be the first to know when we have sales and discounts!</label>
+                    </div>
+            
+                    <div class="text-center fw-bold pt-1">Shipping Address</div> 
+                    <label for="Address" class="form-label">Address:</label>
+                        <input type="text" class="form-control mb-3" id="Address" name="Address" required> 
+
+                    <label for="City" class="form-label p-1">City: </label>
+                    <input type="text" class="form-control" id="City" name="City" required> 
+
+                    <div class="d-flex mt-3 mb-3">
+
+                        <label for="State" class="form-label p-1">State: </label>
+                        <input type="text" class="form-control" id="State" name="State" required> 
+
+                        <label for="Zipcode" class="form-label p-1">Zipcode: </label>
+                        <input type="text" class="form-control" id="Zipcode" name="Zipcode" required> 
+                    </div>
+
+                </div>
+            <div class="col-12 col-md-7 d-flex flex-column">
+                <legend class="fw-bold">Payment Method <i class="bi bi-credit-card-2-front-fill"></i></legend>
+        
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="billing" name="billing-shipping" value="1">
+                    <label class="form-check-label" for="billing-shipping">Please check if billing and shipping information are the same.</label>
+                </div>
+
+                <label for="BillingName" class="form-label">Billing Name:</label>
+                <input type="text" id="BillingName" name="BillingName" class="form-control mb-3" placeholder="Billing Name">
+                
+                <label for="BillingAddress" class="form-label">Billing Address:</label>
+                <input type="text" id="BillingAddress" name="BillingAddress"Name class="form-control mb-3" placeholder="Billing Address">
+
+                <label for="Credit-Card-No" class="form-label">Credit Card No.:</label>
+                <input type="text" class="form-control mb-3" id="Credit-Card-No" name="Credit-Card-No"> 
+
+                <label for="CVV-Code" class="form-label">CVV Code:</label>
+                <input type="text" class="form-control mb-3" id="CVV-Code" name="CVV-Code" placeholder="xxx"> 
+
+                <label for="Expiration-Date" class="form-label">Expiration Date:</label>
+                <input type="month" class="form-control mb-3" id="Expiration-Date" name="Expiration-Date" min="2022-11"> 
+
+                <label for="Promo-Code" class="form-label">Promotional Code:</label>
+                <input type="text" class="form-control mb-3" id="Promo-Code" name="Promo-Code"> 
+
+                <button type="submit" class="btn btn-primary text-center mb-3">Submit</button>
+            </div>
+        
+        </div>
+    </form>
+      </div>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
